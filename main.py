@@ -1,0 +1,6 @@
+p1 = "pawn"
+p2 = "bishop"
+p3 = "knight"
+p4 = "rook"
+p5 = "queen"
+p6 = "king"
