@@ -1,5 +1,4 @@
 "Chess game"
 
----sources---
-
+---SOURCES---
 https://www.pygame.org/docs/tut/ImportInit.html
