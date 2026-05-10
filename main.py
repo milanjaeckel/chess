@@ -18,8 +18,7 @@ screen = pg.display.set_mode((800, 800)) #window (size)
 clock = pg.time.Clock()
 running = True
 
-color = (0, 0, 0)    #rectangle color
-posX, posY = 0, 0        #recatangle position x, recatangle position y
+color = (255, 255, 255)    #rectangle color
 sizeW = 100    #rectangle size
 sizeH = 100    #rectangle size
 
@@ -30,15 +29,22 @@ while running:      #open window
         if event.type == pg.QUIT:
             running = False
     
+    posX, posY = 0, 0   #recatangle position x, recatangle position y
+    s1 = True           #wether or not the first square of the row should be black or white
+
     #render frame
     screen.fill("black")
 
     #chess game
-    while posX < 700:
-        pg.draw.rect(screen, color, (posX, posY, sizeH, sizeW))
-        print(posX)
-        posX = posX + 200
-        print(posX)
+    while posY < 800:
+        posX = 0
+        if s1 != True:
+            posX = posX + 100
+        while posX <= 800:
+            pg.draw.rect(screen, color, (posX, posY, sizeH, sizeW))
+            posX = posX + 200
+        posY = posY + 100
+        s1 = not s1
 
     
 
