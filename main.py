@@ -2,14 +2,12 @@ import pygame as pg
 
 #start pygame
 pg.init()
-screen = pg.display.set_mode((800, 600))
+screen = pg.display.set_mode((800, 800)) #window (size)
 clock = pg.time.Clock()
 running = True
+color = (0, 0, 0) #rectangle color
 
-while running:
-
-    lead_x = 20
-    lead_y = 20
+while running:      #open window
 
     for event in pg.event.get():
         if event.type == pg.QUIT:
@@ -19,7 +17,7 @@ while running:
     screen.fill("white")
 
     #chess game
-    pg.draw.rect()
+    pg.draw.rect(screen, color, pg.Rect(0, 0, 100, 100))
 
 
     #flip display to put game on screen
