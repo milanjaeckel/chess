@@ -38,10 +38,10 @@ while running:      #open window
     #chess game
     while posY < 800:
         posX = 0
-        if s1 != True:
+        if not s1:
             posX = posX + 100
         while posX <= 800:
-            pg.draw.rect(screen, color, (posX, posY, sizeH, sizeW))
+            pg.draw.rect(screen, color, (posX, posY, sizeW, sizeH))
             posX = posX + 200
         posY = posY + 100
         s1 = not s1
