@@ -14,3 +14,5 @@ __---Confirmed working systems---__
 Linux:
 
 Arch (omarchy)
+
+Windows 11
