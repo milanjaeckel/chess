@@ -1,6 +1,6 @@
-"Chess game"
+__"Chess game"__
 
----SOURCES---
+__---SOURCES---__
 
 https://www.pygame.org/docs/tut/ImportInit.html
 
@@ -9,7 +9,8 @@ https://www.geeksforgeeks.org/python/how-to-draw-rectangle-in-pygame/
 
 
 
----Confirmed working systems---
+__---Confirmed working systems---__
 
 Linux:
+
 Arch (omarchy)
