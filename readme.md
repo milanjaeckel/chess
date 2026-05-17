@@ -43,7 +43,7 @@ The main loop handles three things: listening for the quit event, clearing and r
 
 ```
 chess-game/
-├── pieces
+└── pieces
     └── pieces.png (multiple)
 ├── board.py
 ├── main.py
