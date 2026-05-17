@@ -1,19 +1,10 @@
 import pygame as pg    
 
-def render_board():
+def render_board(screen, size):
     
-    size = 900
-
-    #start pygame
-    pg.init()
-    screen = pg.display.set_mode((size, size)) #window (size)
-    
-
     color = (255, 255, 255)    #rectangle color
     sizeW = size / 8    #rectangle size
     sizeH = size / 8    #rectangle size
-    
-    
     posX, posY = 0, 0   #recatangle position x, recatangle position y
     s1 = True           #wether or not the first square of the row should be black or white
 
