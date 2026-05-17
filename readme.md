@@ -11,7 +11,7 @@ A Python chess board renderer built with Pygame. Renders a classic 8x8 chessboar
 
 ## Installation
 
-First, make sure you have Python installed. You can grab it at [python.org](https://www.python.org/downloads/) if not.
+Python needs to be installed.
 
 Then install Pygame by running this in your terminal:
 
