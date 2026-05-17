@@ -43,12 +43,17 @@ The main loop handles three things: listening for the quit event, clearing and r
 
 ```
 chess-game/
+├── pieces
+    └── pieces.png (multiple)
+├── board.py
 ├── main.py
 └── README.md
 ```
 
 ## Sources
 
-- [Pygame — Import and Initialization](https://www.pygame.org/docs/tut/ImportInit.html)
-- [GeeksforGeeks — How to Draw a Rectangle in Pygame](https://www.geeksforgeeks.org/python/how-to-draw-rectangle-in-pygame/)
-- [Blender Stack Exchange — Toggle a Boolean Property](https://blender.stackexchange.com/questions/23040/how-to-easily-toggle-a-boolean-property)
+- [Pygame - Import and Initialization](https://www.pygame.org/docs/tut/ImportInit.html)
+- [GeeksforGeeks - How to Draw a Rectangle in Pygame](https://www.geeksforgeeks.org/python/how-to-draw-rectangle-in-pygame/)
+- [Blender Stack Exchange - Toggle a Boolean Property](https://blender.stackexchange.com/questions/23040/how-to-easily-toggle-a-boolean-property)
+- [StackOverflow - How to call function from another .py file](https://stackoverflow.com/questions/20309456/how-do-i-call-a-function-from-another-py-file)
+- [GeeksforGeeks - Create a chess game in python](https://www.geeksforgeeks.org/python/create-a-chess-game-in-python/)
