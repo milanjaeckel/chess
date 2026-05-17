@@ -11,16 +11,17 @@ p6 = "king"
 line1 = [p4, p3, p2, p5, p6, p2, p3, p4]
 line2 = [p1, p1, p1, p1, p1, p1, p1, p1]
 
+size = 900
 
 #start pygame
 pg.init()
-screen = pg.display.set_mode((800, 800)) #window (size)
+screen = pg.display.set_mode((size, size)) #window (size)
 clock = pg.time.Clock()
 running = True
 
 color = (255, 255, 255)    #rectangle color
-sizeW = 100    #rectangle size
-sizeH = 100    #rectangle size
+sizeW = size / 8    #rectangle size
+sizeH = size / 8    #rectangle size
 
 
 while running:      #open window
@@ -36,14 +37,14 @@ while running:      #open window
     screen.fill("black")
 
     #chess game
-    while posY < 800:
+    while posY < size:
         posX = 0
         if not s1:
-            posX = posX + 100
-        while posX <= 800:
+            posX = posX + size / 8
+        while posX <= size:
             pg.draw.rect(screen, color, (posX, posY, sizeW, sizeH))
-            posX = posX + 200
-        posY = posY + 100
+            posX = posX + size / 4
+        posY = posY + size / 8
         s1 = not s1
 
     
