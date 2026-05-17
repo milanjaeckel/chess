@@ -1,4 +1,5 @@
 import pygame as pg
+from board import render_board
 
 #chess pieces
 p1 = "pawn"
@@ -46,8 +47,6 @@ while running:      #open window
             posX = posX + size / 4
         posY = posY + size / 8
         s1 = not s1
-
-    
 
 
     #flip display to put game on screen
