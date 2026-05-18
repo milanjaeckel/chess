@@ -1,16 +1,6 @@
 import pygame as pg
 from board import render_board
 
-#chess pieces
-p1 = "pawn"
-p2 = "bishop"
-p3 = "knight"
-p4 = "rook"
-p5 = "queen"
-p6 = "king"
-
-line1 = [p4, p3, p2, p5, p6, p2, p3, p4]
-line2 = [p1, p1, p1, p1, p1, p1, p1, p1]
 
 pg.init()
 size = 900
