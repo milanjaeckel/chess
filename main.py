@@ -1,6 +1,10 @@
 import pygame as pg
-from board import render_board
+import numpy as np
 
+from board import render_board
+from position import pos
+
+#print(pos)
 
 pg.init()
 size = 900
