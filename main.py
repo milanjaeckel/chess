@@ -3,8 +3,7 @@ import numpy as np
 
 from board import render_board
 from position import pos
-
-#print(pos)
+from renderPieces import ChessPiece
 
 pg.init()
 size = 900
@@ -12,12 +11,18 @@ screen = pg.display.set_mode((size, size))
 clock = pg.time.Clock()
 running = True
 
+all_pieces = pg.sprite.Group()
+bRook = ChessPiece("pieces/b-rook.png",0 ,0)
+all_pieces.add(bRook)
+
 while running:      #open window
     for event in pg.event.get():
         if event.type == pg.QUIT:
             running = False
     
     render_board(screen, size)
+
+    all_pieces.draw(screen)
 
     #flip display to put game on screen
     pg.display.flip()
