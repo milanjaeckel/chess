@@ -12,8 +12,10 @@ clock = pg.time.Clock()
 running = True
 
 all_pieces = pg.sprite.Group()
-bRook = ChessPiece("pieces/b-rook.png",0 ,0)
+bRook = ChessPiece("pieces/b-rook.png",0 ,7)
+bNight = ChessPiece("pieces/b-knight.png",117 ,7)
 all_pieces.add(bRook)
+all_pieces.add(bNight)
 
 while running:      #open window
     for event in pg.event.get():
