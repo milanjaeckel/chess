@@ -9,7 +9,7 @@ def render_board(screen, size):
     s1 = True           #wether or not the first square of the row should be black or white
 
     #render frame
-    screen.fill("darkolivegreen3")
+    screen.fill("darkolivegreen4")
 
     #chess game
     while posY < size:
